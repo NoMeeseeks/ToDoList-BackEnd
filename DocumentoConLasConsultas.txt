@@ -1,0 +1,67 @@
+Pregunta n.-1:
+Quiero que me des una historia del que necesita y que va a hacer tu to do list y como te gustaría que fuera
+
+Respuesta:
+### Historia del Usuario
+
+*Nombre del Usuario*: Marta Rodríguez  
+*Edad*: 29 años  
+*Profesión*: Diseñadora Gráfica  
+*Situación*: Marta trabaja como freelance y maneja múltiples proyectos al mismo tiempo. Ella necesita una herramienta eficaz para organizar sus tareas, tanto profesionales como personales, de manera eficiente.
+
+*Necesidades de Marta*:
+1. *Gestión de Proyectos*: Marta necesita categorizar sus tareas por proyecto para mantener un orden claro entre sus trabajos de diseño, sus tareas personales y sus estudios continuos.
+2. *Priorizar Tareas*: Con múltiples deadlines, Marta necesita poder asignar prioridades a sus tareas para enfocarse en las más urgentes.
+3. *Recordatorios*: Para no olvidar fechas límite y reuniones importantes, Marta necesita recordatorios y notificaciones.
+4. *Visualización del Progreso*: Ver su progreso diario y semanal la motivaría a seguir adelante y le ayudaría a ver cuánto ha avanzado.
+5. *Colaboración*: En algunos proyectos, Marta trabaja con otros freelancers y necesita compartir listas de tareas y colaborar de manera eficiente.
+6. *Sincronización*: Marta usa varios dispositivos y necesita que su to do list esté sincronizada en su teléfono, tablet y computadora.
+7. *Personalización*: Un diseño atractivo y personalizable sería ideal para Marta, dado que aprecia las interfaces visualmente agradables.
+
+### Funcionalidades del To Do List
+
+1. *Interfaz de Usuario Intuitiva*:
+   - Pantalla de inicio con un resumen de las tareas del día.
+   - Navegación fácil entre diferentes secciones (proyectos, tareas, configuración).
+
+2. *Categorías y Etiquetas*:
+   - Crear categorías (e.g., "Trabajo", "Personal", "Estudios").
+   - Añadir etiquetas personalizadas para una organización más detallada.
+
+3. *Recordatorios y Notificaciones*:
+   - Configuración de recordatorios mediante notificaciones push.
+   - Opción de elegir entre notificaciones por correo electrónico o en la app.
+
+4. *Prioridades*:
+   - Asignar niveles de prioridad a cada tarea.
+   - Filtros para ver solo tareas de alta prioridad.
+
+5. *Fecha y Hora de Vencimiento*:
+   - Asignar fechas y horas de vencimiento a las tareas.
+   - Calendario integrado para una mejor visualización de las tareas próximas.
+
+6. *Sincronización y Backup*:
+   - Sincronización automática entre dispositivos.
+   - Backup automático en la nube para no perder datos.
+
+7. *Subtareas*:
+   - Dividir tareas grandes en subtareas más pequeñas y manejables.
+   - Vista anidada para mantener un control claro.
+
+8. *Vista de Progreso*:
+   - Barras de progreso para cada proyecto.
+   - Resúmenes diarios y semanales de tareas completadas.
+
+9. *Colaboración*:
+   - Compartir listas de tareas con otros usuarios.
+   - Función de comentarios en cada tarea para una mejor comunicación.
+
+10. *Tema Personalizable*:
+    - Opciones de temas claros y oscuros.
+    - Personalización de colores para cada categoría.
+
+### Cómo Le Gustaría Que Fuera
+
+Marta desea que la aplicación sea visualmente atractiva y fácil de usar. Valora un diseño limpio, con colores suaves y una tipografía clara. Le gustaría tener la posibilidad de personalizar la interfaz según sus preferencias para sentirse más cómoda y motivada al usar la aplicación. Además, Marta aprecia las pequeñas animaciones y transiciones suaves que hacen que la interacción con la app sea más agradable.
+
+En resumen, Marta busca una herramienta completa, intuitiva y personalizable que le ayude a organizar su vida de manera eficiente y visualmente placentera.
