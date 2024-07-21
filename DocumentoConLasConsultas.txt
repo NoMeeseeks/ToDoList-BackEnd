@@ -65,3 +65,40 @@ Respuesta:
 Marta desea que la aplicación sea visualmente atractiva y fácil de usar. Valora un diseño limpio, con colores suaves y una tipografía clara. Le gustaría tener la posibilidad de personalizar la interfaz según sus preferencias para sentirse más cómoda y motivada al usar la aplicación. Además, Marta aprecia las pequeñas animaciones y transiciones suaves que hacen que la interacción con la app sea más agradable.
 
 En resumen, Marta busca una herramienta completa, intuitiva y personalizable que le ayude a organizar su vida de manera eficiente y visualmente placentera.
+
+Pregunta 2
+Cuales son los recursos mas importantes que necesitas?
+
+Para una primera edición o MVP de la aplicación de lista de tareas, necesito las siguientes funcionalidades básicas pero esenciales:
+
+Interfaz de Usuario Intuitiva:
+
+Pantalla de inicio con un resumen de las tareas del día.
+Navegación sencilla entre tareas y proyectos.
+Añadir y Editar Tareas:
+
+Crear nuevas tareas.
+Editar y eliminar tareas existentes.
+Categorías Básicas:
+
+Posibilidad de asignar tareas a categorías como "Trabajo" y "Personal".
+Prioridades:
+
+Asignar niveles de prioridad (alta, media, baja) a las tareas.
+Fecha de Vencimiento:
+
+Asignar fechas de vencimiento a las tareas.
+Recordatorios y Notificaciones:
+
+Configuración de recordatorios para tareas específicas.
+Notificaciones push para fechas importantes.
+Vista de Progreso:
+
+Barra de progreso para visualizar el avance de las tareas.
+Sincronización Básica:
+
+Sincronización entre dispositivos principales (por ejemplo, móvil y computadora).
+Tema Claro y Oscuro:
+
+Opción para elegir entre un tema claro y un tema oscuro.
+Estas funcionalidades me permiten empezar a gestionar mis tareas de manera eficaz, garantizando que puedo organizar mi trabajo y vida personal sin problemas. Con estas características, puedo tener un control básico sobre mis prioridades y fechas importantes, mientras espero futuras mejoras y características adicionales.
