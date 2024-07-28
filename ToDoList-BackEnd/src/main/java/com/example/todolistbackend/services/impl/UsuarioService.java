@@ -34,7 +34,18 @@ public class UsuarioService implements IUsuarioService {
     }
 
     @Override
+    public Usuario guardarUsuarioXIdUsuario(Integer idUsuario, UsuarioDTO usuarioDTO) {
+        return null;
+    }
+
+
+    @Override
     public Usuario editarUsuarioXIdUsuario(Integer idUsuario, UsuarioDTO usuarioDTO) {
+        return null;
+    }
+
+    @Override
+    public Usuario eliminarUsuarioXIdUsuario(Integer idUsuario) {
         return null;
     }
 
