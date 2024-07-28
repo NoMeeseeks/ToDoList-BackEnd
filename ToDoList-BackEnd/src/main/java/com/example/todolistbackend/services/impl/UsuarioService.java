@@ -1,5 +1,6 @@
 package com.example.todolistbackend.services.impl;
 
+import com.example.todolistbackend.Dto.UsuarioDTO;
 import com.example.todolistbackend.Model.Usuario;
 import com.example.todolistbackend.Repo.IUsuarioRepo;
 import com.example.todolistbackend.services.IUsuarioService;
@@ -31,4 +32,10 @@ public class UsuarioService implements IUsuarioService {
 
         return null;
     }
+
+    @Override
+    public Usuario editarUsuarioXIdUsuario(Integer idUsuario, UsuarioDTO usuarioDTO) {
+        return null;
+    }
+
 }

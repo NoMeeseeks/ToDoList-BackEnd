@@ -21,4 +21,13 @@ public interface IUsuarioService {
      * @return
      */
     Usuario obtieneUsuarioXIdUsuario(Integer idUsuario);
+
+    /**
+     * metodo para actualizar alguna informacion del usuario
+     *
+     * @param idUsuario
+     * @param usuarioDTO
+     * @return
+     */
+    Usuario editarUsuarioXIdUsuario(Integer idUsuario,UsuarioDTO usuarioDTO);
 }
