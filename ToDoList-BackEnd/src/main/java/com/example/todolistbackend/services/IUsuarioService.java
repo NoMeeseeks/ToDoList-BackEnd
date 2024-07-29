@@ -46,6 +46,6 @@ public interface IUsuarioService {
      * @param idUsuario
      * @return
      */
-    Usuario eliminarUsuarioXIdUsuario(Integer idUsuario);
+    void eliminarUsuarioXIdUsuario(Integer idUsuario);
 
 }

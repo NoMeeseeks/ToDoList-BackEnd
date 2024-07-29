@@ -26,7 +26,7 @@ public class UsuarioService implements IUsuarioService {
 
         Optional<Usuario> usuarioModel = iUsuarioRepo.obtieneUsuarioXIdUsuario(idUsuario);
 
-        if (usuarioModel.isPresent()){
+        if (usuarioModel.isPresent()) {
             return usuarioModel.get();
         }
 
@@ -41,12 +41,24 @@ public class UsuarioService implements IUsuarioService {
 
     @Override
     public Usuario editarUsuarioXIdUsuario(Integer idUsuario, UsuarioDTO usuarioDTO) {
-        return null;
+
+        Usuario usuarioModel = this.obtieneUsuarioXIdUsuario(idUsuario);
+        if (usuarioModel != null) {
+            usuarioModel.setNombre(usuarioDTO.getNombre());
+            usuarioModel.setApellido(usuarioDTO.getApellido());
+            usuarioModel.setCorreo(usuarioDTO.getCorreo());
+            iUsuarioRepo.save(usuarioModel);
+        }
+        return usuarioModel;
     }
 
     @Override
-    public Usuario eliminarUsuarioXIdUsuario(Integer idUsuario) {
-        return null;
+    public void eliminarUsuarioXIdUsuario(Integer idUsuario) {
+        Usuario usuarioModel = this.obtieneUsuarioXIdUsuario(idUsuario);
+        if (usuarioModel != null) {
+            usuarioModel.setEsActivo("N");
+            iUsuarioRepo.save(usuarioModel);
+        }
     }
 
 }
