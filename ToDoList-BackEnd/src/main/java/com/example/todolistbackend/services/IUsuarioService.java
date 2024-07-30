@@ -25,11 +25,10 @@ public interface IUsuarioService {
     /**
      * metodo para guardar el usuario registrado por correo
      *
-     * @param idUsuario
      * @param usuarioDTO
      * @return
      */
-    Usuario guardarUsuarioXIdUsuario(Integer idUsuario,UsuarioDTO usuarioDTO);
+    Usuario guardarUsuarioXIdUsuario(UsuarioDTO usuarioDTO);
 
     /**
      * metodo para actualizar alguna informacion del usuario

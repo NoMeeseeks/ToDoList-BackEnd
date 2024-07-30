@@ -34,7 +34,15 @@ public class UsuarioService implements IUsuarioService {
     }
 
     @Override
-    public Usuario guardarUsuarioXIdUsuario(Integer idUsuario, UsuarioDTO usuarioDTO) {
+    public Usuario guardarUsuarioXIdUsuario(UsuarioDTO usuarioDTO) {
+
+        Usuario usuarioModel = new Usuario();
+        usuarioModel.setNombre(usuarioDTO.getNombre());
+        usuarioModel.setApellido(usuarioDTO.getApellido());
+        usuarioModel.setCorreo(usuarioDTO.getCorreo());
+        usuarioModel.setEsActivo("S");
+        iUsuarioRepo.save(usuarioModel);
+
         return null;
     }
 

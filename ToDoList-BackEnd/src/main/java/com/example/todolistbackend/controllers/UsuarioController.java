@@ -30,6 +30,14 @@ public class UsuarioController {
         return ResponseEntity.ok().build();
     }
 
+    @PostMapping("/s")
+    public ResponseEntity<?> saveUsuario(
+            @RequestBody UsuarioDTO usuarioDTO
+    ){
+
+        return ResponseEntity.ok().build();
+    }
+
     @PutMapping("/{codigoUsuario}/s")
     public ResponseEntity<?> actualizarUsuario(
             @PathVariable(name = "codigoUsuario")Integer codigoUsuario,
