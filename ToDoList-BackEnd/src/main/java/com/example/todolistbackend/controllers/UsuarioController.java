@@ -35,6 +35,9 @@ public class UsuarioController {
             @RequestBody UsuarioDTO usuarioDTO
     ){
 
+        iUsuarioService.guardarUsuarioXIdUsuario(usuarioDTO);
+
+
         return ResponseEntity.ok().build();
     }
 

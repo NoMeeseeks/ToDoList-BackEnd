@@ -43,7 +43,7 @@ public class UsuarioService implements IUsuarioService {
         usuarioModel.setEsActivo("S");
         iUsuarioRepo.save(usuarioModel);
 
-        return null;
+        return usuarioModel;
     }
 
 
