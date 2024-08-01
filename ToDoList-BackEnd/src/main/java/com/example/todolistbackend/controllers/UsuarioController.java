@@ -16,12 +16,12 @@ public class UsuarioController {
 
     private final IUsuarioService iUsuarioService;
 
-    @GetMapping()
-    public ResponseEntity<?> obtenerTodosLosUsuario(){
+    @GetMapping("/obtenerTodos")
+    public ResponseEntity<?> obtenerTodosLosUsuario() {
 
         List<Usuario> ls = iUsuarioService.obtenerTodosLosUsuarios();
 
-        for (Usuario item: ls){
+        for (Usuario item : ls) {
             System.out.println(item.getIdUsuario());
             System.out.println(item.getNombre());
             System.out.println(item.getApellido());
@@ -30,29 +30,36 @@ public class UsuarioController {
         return ResponseEntity.ok().build();
     }
 
-    @PostMapping("/s")
+    @GetMapping("/{codigoUsuario}")
+    public ResponseEntity<?> obtenerUsuario(
+            @PathVariable(name = "codigoUsuario") Integer codigoUsuario
+    ) {
+        iUsuarioService.obtieneUsuarioXIdUsuario(codigoUsuario);
+
+        return ResponseEntity.ok().build();
+    }
+
+    @PostMapping()
     public ResponseEntity<?> saveUsuario(
             @RequestBody UsuarioDTO usuarioDTO
-    ){
-
+    ) {
         iUsuarioService.guardarUsuarioXIdUsuario(usuarioDTO);
 
-
         return ResponseEntity.ok().build();
     }
 
-    @PutMapping("/{codigoUsuario}/s")
+    @PutMapping("/{codigoUsuario}")
     public ResponseEntity<?> actualizarUsuario(
-            @PathVariable(name = "codigoUsuario")Integer codigoUsuario,
-            @RequestBody UsuarioDTO usuarioDTO){
+            @PathVariable(name = "codigoUsuario") Integer codigoUsuario,
+            @RequestBody UsuarioDTO usuarioDTO) {
 
-        iUsuarioService.editarUsuarioXIdUsuario(codigoUsuario,usuarioDTO);
+        iUsuarioService.editarUsuarioXIdUsuario(codigoUsuario, usuarioDTO);
 
         return ResponseEntity.ok().build();
     }
 
-    @DeleteMapping("/{codigoUsuario}")
-    public ResponseEntity<?> eliminarUsuario(@PathVariable(name = "codigoUsuario")Integer codigoUsuario ){
+    @DeleteMapping("/{codigoUsuario}/inactivar")
+    public ResponseEntity<?> eliminarUsuario(@PathVariable(name = "codigoUsuario") Integer codigoUsuario) {
 
         iUsuarioService.eliminarUsuarioXIdUsuario(codigoUsuario);
 
