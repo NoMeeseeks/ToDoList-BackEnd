@@ -35,11 +35,17 @@ public class UsuarioService implements IUsuarioService {
 
     @Override
     public Usuario guardarUsuarioXIdUsuario(UsuarioDTO usuarioDTO) {
+        Optional<Usuario> usuarioRegistrado = iUsuarioRepo.obtieneUsuarioXCorreo(usuarioDTO.getCorreo().toLowerCase());
+
+        if (usuarioRegistrado.isPresent()) {
+            throw new RuntimeException("El correo ya se encuentra asginado");
+        }
 
         Usuario usuarioModel = new Usuario();
         usuarioModel.setNombre(usuarioDTO.getNombre());
         usuarioModel.setApellido(usuarioDTO.getApellido());
         usuarioModel.setCorreo(usuarioDTO.getCorreo());
+        usuarioModel.setContrasena(usuarioDTO.getContrasena());
         usuarioModel.setEsActivo("S");
         iUsuarioRepo.save(usuarioModel);
 
