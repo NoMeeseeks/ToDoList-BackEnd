@@ -1,7 +1,8 @@
 package com.example.todolistbackend.controllers;
 
-import com.example.todolistbackend.Dto.UsuarioDTO;
-import com.example.todolistbackend.Model.Usuario;
+import com.example.todolistbackend.converter.UsuarioDtoConverter;
+import com.example.todolistbackend.dto.UsuarioDTO;
+import com.example.todolistbackend.model.Usuario;
 import com.example.todolistbackend.services.IUsuarioService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -15,6 +16,7 @@ import java.util.List;
 public class UsuarioController {
 
     private final IUsuarioService iUsuarioService;
+    private final UsuarioDtoConverter usuarioDtoConverter;
 
     @GetMapping("/obtenerTodos")
     public ResponseEntity<?> obtenerTodosLosUsuario() {
@@ -34,18 +36,19 @@ public class UsuarioController {
     public ResponseEntity<?> obtenerUsuario(
             @PathVariable(name = "codigoUsuario") Integer codigoUsuario
     ) {
-        iUsuarioService.obtieneUsuarioXIdUsuario(codigoUsuario);
+        Usuario modelUsuario = iUsuarioService.obtieneUsuarioXIdUsuario(codigoUsuario);
 
-        return ResponseEntity.ok().build();
+        return ResponseEntity.ok(usuarioDtoConverter.converterUsuarioModelToDto(modelUsuario));
     }
 
     @PostMapping()
     public ResponseEntity<?> saveUsuario(
             @RequestBody UsuarioDTO usuarioDTO
     ) {
-        iUsuarioService.guardarUsuarioXIdUsuario(usuarioDTO);
+        Usuario modelUsuario = iUsuarioService.guardarUsuarioXIdUsuario(usuarioDTO);
 
-        return ResponseEntity.ok().build();
+        return ResponseEntity.ok(usuarioDtoConverter.converterUsuarioModelToDto(modelUsuario));
+
     }
 
     @PutMapping("/{codigoUsuario}")
@@ -53,9 +56,9 @@ public class UsuarioController {
             @PathVariable(name = "codigoUsuario") Integer codigoUsuario,
             @RequestBody UsuarioDTO usuarioDTO) {
 
-        iUsuarioService.editarUsuarioXIdUsuario(codigoUsuario, usuarioDTO);
+        Usuario modelUsuario = iUsuarioService.editarUsuarioXIdUsuario(codigoUsuario, usuarioDTO);
 
-        return ResponseEntity.ok().build();
+        return ResponseEntity.ok(usuarioDtoConverter.converterUsuarioModelToDto(modelUsuario));
     }
 
     @DeleteMapping("/{codigoUsuario}/inactivar")
