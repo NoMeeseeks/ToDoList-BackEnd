@@ -1,10 +1,9 @@
-package com.example.todolistbackend.Repo;
+package com.example.todolistbackend.repo;
 
-import com.example.todolistbackend.Model.Usuario;
+import com.example.todolistbackend.model.Usuario;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
-import javax.swing.text.html.Option;
 import java.util.Optional;
 
 public interface IUsuarioRepo extends JpaRepository<Usuario, Integer> {

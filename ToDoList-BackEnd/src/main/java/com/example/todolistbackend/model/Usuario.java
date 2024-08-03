@@ -1,4 +1,4 @@
-package com.example.todolistbackend.Model;
+package com.example.todolistbackend.model;
 
 import jakarta.persistence.*;
 import lombok.*;

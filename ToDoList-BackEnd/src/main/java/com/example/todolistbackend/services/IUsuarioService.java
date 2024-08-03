@@ -1,7 +1,7 @@
 package com.example.todolistbackend.services;
 
-import com.example.todolistbackend.Dto.UsuarioDTO;
-import com.example.todolistbackend.Model.Usuario;
+import com.example.todolistbackend.dto.UsuarioDTO;
+import com.example.todolistbackend.model.Usuario;
 
 import java.util.List;
 

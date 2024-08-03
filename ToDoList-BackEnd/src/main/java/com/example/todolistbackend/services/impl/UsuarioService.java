@@ -1,8 +1,8 @@
 package com.example.todolistbackend.services.impl;
 
-import com.example.todolistbackend.Dto.UsuarioDTO;
-import com.example.todolistbackend.Model.Usuario;
-import com.example.todolistbackend.Repo.IUsuarioRepo;
+import com.example.todolistbackend.dto.UsuarioDTO;
+import com.example.todolistbackend.model.Usuario;
+import com.example.todolistbackend.repo.IUsuarioRepo;
 import com.example.todolistbackend.services.IUsuarioService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
