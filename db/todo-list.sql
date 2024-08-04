@@ -30,6 +30,9 @@ create table prioridades(
 	fecha_modificacion date null
   )
   
+ALTER TABLE usuarios ADD COLUMN contrasena varchar(100);
+
+
 select *
 from usuarios u ;
 
