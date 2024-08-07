@@ -31,7 +31,10 @@ create table prioridades(
   )
   
 ALTER TABLE usuarios ADD COLUMN contrasena varchar(100);
+ALTER TABLE tarea ADD COLUMN id_usuario int;
 
+ALTER TABLE tarea add constraint llaveForaneaPrioridades foreign key (id_prioridad) references prioridades(id_prioridad);
+ALTER TABLE tarea add constraint llaveForaneaUsuario foreign key (id_usuario) references usuarios(id_usuario);
 
 select *
 from usuarios u ;
@@ -41,3 +44,8 @@ from tarea;
 
 select *
 from prioridades;
+
+select t.id_tarea,t.titulo ,t.descripcion ,t.id_usuario, u.nombre , t.id_prioridad , p.nombre 
+from tarea t, usuarios u, prioridades p
+where t.id_usuario = u.id_usuario 
+and t.id_prioridad  = p.id_prioridad 
