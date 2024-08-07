@@ -24,6 +24,9 @@ public class Tarea {
     @JoinColumn(name = "id_prioridad",referencedColumnName = "id_prioridad", insertable = false, updatable = false)
     private Integer idPrioridad;
 
+    @JoinColumn(name = "id_usuario",referencedColumnName = "id_usuario", insertable = false, updatable = false)
+    private Integer idUsuario;
+
     @Column(name = "titulo")
     private String titulo;
 

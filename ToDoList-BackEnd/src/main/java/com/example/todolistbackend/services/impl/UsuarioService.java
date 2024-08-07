@@ -28,9 +28,9 @@ public class UsuarioService implements IUsuarioService {
 
         if (usuarioModel.isPresent()) {
             return usuarioModel.get();
+        }else {
+            throw new RuntimeException("No se encontro el usuario");
         }
-
-        return null;
     }
 
     @Override
