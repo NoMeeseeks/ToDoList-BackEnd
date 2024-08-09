@@ -49,3 +49,10 @@ select t.id_tarea,t.titulo ,t.descripcion ,t.id_usuario, u.nombre , t.id_priorid
 from tarea t, usuarios u, prioridades p
 where t.id_usuario = u.id_usuario 
 and t.id_prioridad  = p.id_prioridad 
+
+insert into tarea (id_prioridad,titulo,descripcion,es_activo,usuario_creacion,fecha_creacion,id_usuario) 
+values(1,'prueba','aqui una prueba','S','xavier','2024-08-08',2)
+
+select *
+from tarea t 
+where t.id_usuario = 2
